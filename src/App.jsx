@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import { useState } from "react";
 
@@ -26,11 +27,14 @@ function App() {
 
   return (
     <div className="wrapper">
+      <Router>
+
       <Nav />
       <Home employees={employees} owners={owners} pets={pets} />
       <StaffList employees={employees} />
       <PetsList pets={pets} />
       <Footer />
+      </Router>
     </div>
   );
 }
