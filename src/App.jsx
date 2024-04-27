@@ -28,12 +28,13 @@ function App() {
   return (
     <div className="wrapper">
       <Router>
+
         <Nav />
-        <Routes>
-          <Route path="/" element={<Home employees={employees} owners={owners} pets={pets} />} />
-          <Route path="/staff" element={<StaffList employees={employees} />} />
-          <Route path="/pets" element={<PetsList pets={pets} />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home employees={employees} owners={owners} pets={pets} />} />
+            <Route path="/staff" element={<StaffList employees={employees} />} />
+            <Route path="/pets" element={<PetsList pets={pets} />} />
+          </Routes>
         <Footer />
       </Router>
     </div>
